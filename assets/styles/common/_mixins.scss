@@ -1,0 +1,156 @@
+// RWD BREAKPOINTS
+// mobile first! so you only have to use floats etc in larger sizes
+// set breakpoints where your content breaks, not particular devices
+
+@mixin breakpoint($point) {
+  @if $point == xs {
+    @media screen and (min-width: $screen__xs)  { @content; }
+  }
+  @if $point == sm {
+    @media screen and (min-width: $screen__sm) { @content; }
+  }
+  @if $point == md {
+    @media screen and (min-width: $screen__md) { @content; }
+  }
+  @if $point == lg {
+    @media screen and (min-width: $screen__lg) { @content; }
+  }
+  @else if $point == xl {
+    @media screen and (min-width: $screen__sl) { @content; }
+  }
+}
+
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+/**
+ * Lists
+ */
+@mixin no-bullets() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin inline-list() {
+  @include no-bullets();
+  li {
+   display: inline-block;
+ }
+}
+
+@mixin inline-table-list() {
+  @include no-bullets();
+  display: table;
+  li {
+    display: table-cell;
+  }
+}
+
+@mixin inline-flex-list($direction: row, $wrap: wrap, $align: space-between, $shrink: 1, $grow: 0, $context: auto) {
+  @include no-bullets();
+  display: flex;
+  flex-wrap: $wrap;
+  li {
+    flex: $shrink $grow $context;
+    margin-bottom: 1px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(0,0,0,.1);
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
+
+/**
+ * Utilities
+ */
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+// Hide/show with transition
+// http://bitsofco.de/3-useful-reusable-sass-mixins/#hidingandshowingelementswithatransition
+@mixin fade($type) {
+
+  @if $type == 'hide' {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s;
+  }
+
+  @else if $type == 'show' {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+  }
+
+}
+
+@mixin screen-reader-text() {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  /* many screen reader and browser combinations announce broken words as they would appear visually */
+  word-wrap: normal !important;
+}
+
+@mixin visuallyhidden() {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}

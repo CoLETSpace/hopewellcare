@@ -1,0 +1,17 @@
+{
+  "name": "custom-themes/glocal",
+  "type": "wordpress-theme",
+  "license": "GPL-3.0",
+  "description": "Vantage child theme for Glocal.",
+  "homepage": "https://git.glocal.coop/custom-themes/glocal.git",
+  "authors": [
+    {
+      "name": "Pea, Glocal",
+      "email": "pea@glocal.coop",
+      "homepage": "https://github.com/misfist"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ]
+}

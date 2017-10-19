@@ -1,0 +1,221 @@
+/*
+Theme Name:     Glocal
+Theme URI:      https://git.glocal.coop/custom-themes/glocal/
+Description:    Vantage child theme for Glocal.
+Author:         Pea <pea@glocal.coop>
+Author URI:     https://glocal.coop
+Template:       vantage
+Version:        1.1.1
+Text Domain:    glocal
+*/
+/**
+ * # Variables
+ */
+/**
+ * Import scss partials here.
+ */
+/**
+ * Color variables
+ */
+/* Social Media - http://www.paulund.co.uk/social-media-colours */
+/**
+ * Elements
+ */
+/**
+ * # Common
+ */
+/**
+ * Import scss partials here.
+ */
+/**
+ * Lists
+ */
+/**
+ * Utilities
+ */
+.inverted-text {
+  color: #fff; }
+  .inverted-text h1,
+  .inverted-text h2,
+  .inverted-text h3,
+  .inverted-text h4,
+  .inverted-text p {
+    color: #fff; }
+
+/**
+ * # Structure
+ */
+/**
+ * Import scss partials here.
+ */
+/**
+ * # Elements
+ */
+/**
+ * Import scss partials here.
+ */
+#secondary .widget .widget-title {
+  color: #fff; }
+
+/**
+ * # Pages
+ */
+/**
+ * Import scss partials here.
+ */
+.entry-content {
+  color: #222; }
+  .entry-content h5 {
+    font-size: 150%;
+    color: #222; }
+  .entry-content .inverted-text {
+    color: #fff; }
+    .entry-content .inverted-text h5 {
+      color: #fff; }
+  .entry-content .panel-grid {
+    margin-bottom: 0; }
+    .entry-content .panel-grid .panel-row-style {
+      padding-top: 2.5em;
+      padding-bottom: 2.5em; }
+  .entry-content .widget_headline-widget h3 {
+    color: #222;
+    font-size: 180%;
+    font-weight: 300; }
+  .entry-content .widget_headline-widget .decoration {
+    border-top-color: rgba(34, 34, 34, 0.5); }
+  .entry-content .inverted-text .widget_headline-widget h3 {
+    color: #fff; }
+  .entry-content .inverted-text .widget_headline-widget .decoration {
+    border-top-color: #fff; }
+
+.primary h3 {
+  padding-bottom: 0; }
+
+.primary .textwidget {
+  margin-top: 1em;
+  font-size: 120%; }
+
+.sow-icon-image {
+  background-repeat: no-repeat; }
+
+#hero {
+  color: #fff; }
+  #hero p {
+    font-size: 1.375em;
+    line-height: 1.5; }
+
+#what-we-do {
+  padding-bottom: 2em;
+  color: #222; }
+
+#who-we-are {
+  color: #222; }
+  #who-we-are .panel-row-style {
+    padding-bottom: 5em; }
+
+#contact-us {
+  color: #fff; }
+
+.iw-so-person {
+  padding: 1em;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(34, 34, 34, 0.25);
+  -moz-box-shadow: 1px 1px 2px 2px rgba(34, 34, 34, 0.25);
+  box-shadow: 1px 1px 2px 2px rgba(34, 34, 34, 0.25); }
+
+.iw-so-person-img {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto; }
+
+/**
+ * # Plugins
+ */
+#buddypress #header-cover-image {
+  background-color: #f7941e; }
+
+.caldera-grid br {
+  display: none; }
+
+#crm-container input[type="submit"],
+#crm-container a.button {
+  display: inline-block;
+  float: none;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  background: none;
+  box-shadow: none;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 135%;
+  font-size: 0.875;
+  text-shadow: none;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+#crm-container input[type="text"] {
+  width: 100%;
+  box-shadow: inset 0 1px 1px rgba(34, 34, 34, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(34, 34, 34, 0.075); }
+
+#crm-container textarea {
+  width: 100%;
+  height: 50px;
+  box-shadow: inset 0 1px 1px rgba(34, 34, 34, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(34, 34, 34, 0.075); }
+
+#crm-container .label {
+  float: none;
+  text-align: left;
+  width: auto; }
+
+#crm-container .edit-value.content {
+  margin-left: 0; }
+
+#crm-container .crm-title,
+#crm-container #printer-friendly {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute; }
+
+#crm-container .crm-button-icon {
+  display: none; }
+
+#crm-container .crm-container .crm-button {
+  padding: 0;
+  float: none;
+  background: none;
+  border: none; }
+
+#crm-container input[type="submit"],
+#crm-container a.button {
+  color: #282828;
+  background-color: #fff;
+  border-color: #e0e0e0; }
+  #crm-container input[type="submit"]:hover, #crm-container input[type="submit"]:focus,
+  #crm-container a.button:hover,
+  #crm-container a.button:focus {
+    background-color: #e0e0e0;
+    text-decoration: none; }
+
+/*@include breakpoint(sm) {
+	#crm-container {
+		.editrow_first_name-section,
+		.editrow_last_name-section {
+			width: 50%
+			float: left;
+		}
+	}
+}*/

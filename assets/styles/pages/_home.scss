@@ -1,0 +1,102 @@
+$color__white: #fff;
+$color__black: #222;
+
+.entry-content {
+  color: $color__black;
+
+  h5 {
+    font-size: 150%;
+    color: $color__black;
+  }
+
+  .inverted-text {
+    color: $color__white;
+    h5 {
+      color: $color__white;
+    }
+  }
+
+  .panel-grid {
+    margin-bottom: 0;
+
+    .panel-row-style {
+      padding-top: 2.5em;
+      padding-bottom: 2.5em;
+    }
+  }
+
+  .widget_headline-widget {
+    h3 {
+      color: $color__black;
+      font-size: 180%;
+      font-weight: 300;
+    }
+    .decoration {
+      border-top-color: rgba($color__black,.5);
+    }
+  }
+
+  .inverted-text {
+    .widget_headline-widget {
+      h3 {
+        color: $color__white;
+      }
+      .decoration {
+        border-top-color: $color__white;
+      }
+    }
+  }
+}
+
+.primary {
+  h3 {
+    padding-bottom: 0;
+  }
+  .textwidget {
+    margin-top: 1em;
+    font-size: 120%;
+  }
+}
+
+.sow-icon-image {
+  background-repeat: no-repeat;
+}
+
+#hero {
+  color: $color__white;
+  p {
+    font-size: $font__size-h4;
+    line-height: $spacing__body;
+  }
+}
+
+#what-we-do {
+  padding-bottom: 2em;
+  color: $color__black;
+}
+
+#who-we-are {
+  color: $color__black;
+  .panel-row-style {
+    padding-bottom: 5em;
+  }
+}
+
+#contact-us {
+  color: $color__white;
+}
+
+
+.iw-so-person {
+	padding: 1em;
+	background-color: $color__white;
+	-webkit-box-shadow: 1px 1px 2px 2px rgba($color__black,0.25);
+	-moz-box-shadow: 1px 1px 2px 2px rgba($color__black,0.25);
+	box-shadow: 1px 1px 2px 2px rgba($color__black,0.25);
+}
+
+.iw-so-person-img {
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+}

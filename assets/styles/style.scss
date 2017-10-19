@@ -1,0 +1,40 @@
+/*
+Theme Name:     Glocal
+Theme URI:      https://git.glocal.coop/custom-themes/glocal/
+Description:    Vantage child theme for Glocal.
+Author:         Pea <pea@glocal.coop>
+Author URI:     https://glocal.coop
+Template:       vantage
+Version:        1.1.1
+Text Domain:    glocal
+*/
+
+/**
+ * # Variables
+ */
+@import 'variables/index';
+
+/**
+ * # Common
+ */
+@import 'common/index';
+
+/**
+ * # Structure
+ */
+@import 'structure/index';
+
+/**
+ * # Elements
+ */
+@import 'elements/index';
+
+/**
+ * # Pages
+ */
+@import 'pages/index';
+
+/**
+ * # Plugins
+ */
+@import 'plugins/index';

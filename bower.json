@@ -1,0 +1,10 @@
+{
+  "name": "anp-network-main-v2-child",
+  "homepage": "https://github.com/glocalcoop/anp-network-main-v2-child",
+  "authors": [
+    "Pea, Glocal Coop"
+  ],
+  "license": "GPL-3.0",
+  "private": true,
+  "dependencies": {}
+}
